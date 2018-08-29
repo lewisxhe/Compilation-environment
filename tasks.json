@@ -1,0 +1,75 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "./run.py",
+                "build",
+                "examples\\light_switch\\myclient",
+            ],
+            "group": "build",
+            "presentation": {
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "./run.py",
+                "clean",
+                "examples\\light_switch\\myclient"
+            ],
+            "group": "build",
+            "presentation": {
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "rebuild project",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "./run.py",
+                "rebuild",
+            ],
+            "group": "build",
+            "presentation": {
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "flash",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "./run.py",
+                "flash",
+                "examples\\light_switch\\myclient"
+            ],
+            "group": "build",
+            "presentation": {
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "flash softdevice",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "./run.py",
+                "flash_softdevice",
+            ],
+            "group": "build",
+            "presentation": {
+            },
+            "problemMatcher": "$msCompile"
+        },
+    ]
+}
