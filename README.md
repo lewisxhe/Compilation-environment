@@ -118,7 +118,7 @@ GNU_PREFIX := arm-none-eabi
 
     运行无误显示如下图:
 
-    ![cmake](./cmake.png)
+    ![cmake](./cmake.PNG)
 
     如果工程SDK工程结构没有变更，这里指的变更是没有添加的工程，那么只需要构建一次即可，如果添加了自己的工程需要重新构建cmakelist，重新运行上面第三行重新构建即可
 
@@ -131,7 +131,7 @@ GNU_PREFIX := arm-none-eabi
         ```
         运行效果如下图:
 
-        ![](./build.png)
+        ![](./build.PNG)
 
     * 清除指定工程
         ```
@@ -139,7 +139,7 @@ GNU_PREFIX := arm-none-eabi
         ```
         运行效果如下图:
 
-        ![](./clean.png)
+        ![](./clean.PNG)
 
 
     * 对构建的所有工程进行编译
@@ -148,7 +148,7 @@ GNU_PREFIX := arm-none-eabi
         ```
         运行效果如下图:
 
-        ![](./buildall.png)
+        ![](./buildall.PNG)
 
     * 清除所有编译工程
         ```
@@ -156,7 +156,7 @@ GNU_PREFIX := arm-none-eabi
         ```
         运行效果如下图:
 
-        ![](./cleanall.png)
+        ![](./cleanall.PNG)
 
 
 7. 添加属于自己的工程
@@ -181,7 +181,7 @@ GNU_PREFIX := arm-none-eabi
     
     运行效果如下图:
 
-    ![](./myclient.png)
+    ![](./myclient.PNG)
 
 8. 烧录hex文件
     烧录hex文件需要安装[nRF5x-Command-Line-Tools](https://www.nordicsemi.com/eng/Products/nRF52840)，需要使用到里面提供的`nrfjprog`
@@ -203,7 +203,7 @@ GNU_PREFIX := arm-none-eabi
     ```
     运行效果如下图:
 
-    ![](./program.png)
+    ![](./program.PNG)
 
     如果每次编译烧录都要输入那么一大堆命令还不如使用ide算了，所以需要自己写一个脚本再配合`vscode`任务就可以像ide那样工作了，原来写了一个shell脚本，后来考虑到跨平台的问题，所以使用python重写了一个脚本,脚本名为`run.py`
 
