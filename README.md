@@ -192,10 +192,10 @@ GNU_PREFIX := arm-none-eabi
     # 烧录前清除flash，这个不是必须的
     nrfjprog -f nrf52 --eraseall
 
-    # 烧录softdevice,这里需要使用绝对路劲，不可以使用相对路径
+    # 烧录softdevice,这里需要使用绝对路径，不可以使用相对路径
     nrfjprog -f nrf52 --program C:/Users/Lewis/Documents/nrf/nRF5_SDK_15.0.0_a53641a/components/softdevice/s140/hex/s140_nrf52_6.0.0_softdevice.hex --sectorerase
 
-    # 烧录指定的hex文件,这里需要使用绝对路劲，不可以使用相对路径
+    # 烧录指定的hex文件,这里需要使用绝对路径，不可以使用相对路径
     nrfjprog -f nrf52 --program C:/Users/Lewis/Documents/nrf/nrf5_SDK_for_Mesh_v2.1.1_src/build/examples/light_switch/myclient/light_switch_myclient_nrf52840_xxAA_s140_6.0.0.hex
 
     # 复位
