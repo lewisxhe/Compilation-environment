@@ -14,12 +14,12 @@
 
 CommandLineTools安装完毕后不会自动添加在环境变量内，需要手动添加到环境变量内:
 
-## Windonws
+## Windows
 默认安装目录为，
 ```
 C:\Program Files (x86)\Nordic Semiconductor\nrf5x\bin
 ```
-将该路径添加在环境变量内，以便可以在命令行直接调用,windowns 更改环境变量后不会马上生效，需要重启才能生效。
+将该路径添加在环境变量内，以便可以在命令行直接调用,Windows 更改环境变量后不会马上生效，需要重启才能生效。
 
 ## Mac/Liunx
 添加到环境变量与安装gcc编译工具链方式相同
